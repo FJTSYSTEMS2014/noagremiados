@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicación de Codificación de Votación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-weight: bold;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplicación de Codificación de Votación</h1>
+    <p>Ingrese los números de teléfono separados por comas:</p>
+    <textarea id="phoneNumbers" rows="4" cols="50" ></textarea>
+    <br>
+    <button id="generateButton">OK</button>
+    <br>
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Número de Teléfono</th>
+                <th>Código</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+   
+    <a id="downloadCsvLink" style="display: none;" download="codigos.csv">Descargar Códigos (CSV)</a>
+    <a id="downloadJsonLink" style="display: none;" download="codigos.json">Descargar Códigos (JSON)</a>
+     <a id="downloadXmlLink" style="display: none;" download="codigos.xml">Opcional-Descargar Códigos (XML)</a>
+
+    <script src="app.js"></script>
+</body>
+</html>
